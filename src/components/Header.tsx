@@ -20,10 +20,7 @@ export function Header() {
   }, []);
 
   return (
-    <motion.header
-      initial={{ y: -80, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+    <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
@@ -32,7 +29,11 @@ export function Header() {
       )}
     >
       <Container className="flex h-16 items-center justify-between sm:h-20">
-        <a href="#top" className="flex items-center" aria-label="Rohi Energy home">
+        <a
+          href="#top"
+          className="flex items-center transition-opacity hover:opacity-80"
+          aria-label="Rohi Energy home"
+        >
           <Logo />
         </a>
 
@@ -101,6 +102,6 @@ export function Header() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.header>
+    </header>
   );
 }

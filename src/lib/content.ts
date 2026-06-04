@@ -7,7 +7,7 @@ export const company = {
   name: "Rohi Energy",
   tagline: "Powering progress, responsibly.",
   shortName: "Rohi",
-  established: 2009,
+  established: 2024,
 } as const;
 
 export const nav = [
@@ -30,7 +30,7 @@ export const about = {
   eyebrow: "Who we are",
   heading: "A measured approach to a vital industry.",
   body: [
-    "Founded in 2009, Rohi Energy is an integrated oil and gas company operating across the full value chain — from upstream exploration to midstream logistics and downstream supply.",
+    "Founded in 2024, Rohi Energy is an integrated oil and gas company operating across the full value chain — from upstream exploration to midstream logistics and downstream supply.",
     "We believe energy and responsibility are not opposing forces. Every barrel we produce is governed by rigorous safety, environmental, and governance standards, and a long-term commitment to the regions where we operate.",
   ],
   highlights: [
@@ -73,8 +73,8 @@ export const stats = {
   items: [
     { value: "120k", label: "Barrels produced per day" },
     { value: "1.4B", label: "Barrels in proven reserves" },
-    { value: "12", label: "Countries of operation" },
-    { value: "15+", label: "Years of safe delivery" },
+    { value: "3", label: "Countries of operation" },
+    { value: "3+", label: "Years of safe delivery" },
   ],
 } as const;
 
@@ -82,9 +82,9 @@ export const contact = {
   eyebrow: "Contact",
   heading: "Let's talk.",
   body: "Whether you're a partner, supplier, or prospective team member, we'd be glad to hear from you.",
-  email: "hello@rohienergy.com",
-  phone: "+1 (555) 014-2390",
-  address: "Suite 1200, Energy Plaza, Houston, TX 77002",
+  email: "support@rohienergy.com",
+  phone: "+234 (81) 014-2390",
+  address: "14b Parklane, Apapa, Lagos, NG 77002",
   socials: [
     { label: "LinkedIn", href: "https://www.linkedin.com" },
     { label: "X", href: "https://x.com" },
