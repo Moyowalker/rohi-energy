@@ -27,7 +27,7 @@ export function Header() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "border-b border-line bg-background/70 backdrop-blur-xl"
+          ? "border-b border-line bg-background/80 shadow-sm backdrop-blur-xl"
           : "border-b border-transparent bg-transparent"
       )}
     >
@@ -86,7 +86,7 @@ export function Header() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="rounded-md px-2 py-3 text-base font-medium text-ink-soft hover:bg-white/5 hover:text-ink"
+                  className="rounded-md px-2 py-3 text-base font-medium text-ink-soft hover:bg-black/5 hover:text-ink"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}

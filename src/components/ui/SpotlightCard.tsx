@@ -46,7 +46,7 @@ export function SpotlightCard({
       onMouseLeave={reset}
       style={{ rotateX: srx, rotateY: sry, transformPerspective: 900 }}
       className={cn(
-        "group relative overflow-hidden rounded-2xl border border-line bg-bg-elev/70 p-8 backdrop-blur-sm transition-colors duration-300 hover:border-accent/40",
+        "group relative overflow-hidden rounded-2xl border border-line bg-bg-elev/70 p-8 shadow-sm backdrop-blur-sm transition-all duration-300 hover:border-accent/40 hover:shadow-lg",
         className
       )}
     >
@@ -54,7 +54,7 @@ export function SpotlightCard({
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
-          background: `radial-gradient(280px circle at ${pos.x}% ${pos.y}%, rgba(232,132,60,0.16), transparent 70%)`,
+          background: `radial-gradient(280px circle at ${pos.x}% ${pos.y}%, rgba(14,165,233,0.16), transparent 70%)`,
         }}
       />
       <div className="relative">{children}</div>

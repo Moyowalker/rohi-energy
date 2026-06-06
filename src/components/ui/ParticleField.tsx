@@ -77,7 +77,7 @@ export function ParticleField({ className }: { className?: string }) {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(232,132,60,${p.a})`;
+        ctx.fillStyle = `rgba(14,165,233,${p.a})`;
         ctx.fill();
 
         // connecting lines
@@ -88,7 +88,7 @@ export function ParticleField({ className }: { className?: string }) {
           const ld2 = lx * lx + ly * ly;
           if (ld2 < 13000) {
             const o = (1 - ld2 / 13000) * 0.18;
-            ctx.strokeStyle = `rgba(255,176,102,${o})`;
+            ctx.strokeStyle = `rgba(16,185,129,${o})`;
             ctx.lineWidth = 0.6;
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);

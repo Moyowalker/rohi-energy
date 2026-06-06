@@ -7,7 +7,7 @@ import { contactSchema } from "@/lib/contact-schema";
 type Status = "idle" | "submitting" | "success" | "error";
 
 const fieldBase =
-  "w-full rounded-lg border border-line-strong bg-white/[0.03] px-4 py-3 text-sm text-ink placeholder:text-ink-dim transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30";
+  "w-full rounded-lg border border-line-strong bg-black/[0.03] px-4 py-3 text-sm text-ink placeholder:text-ink-dim transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30";
 
 export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -55,7 +55,7 @@ export function ContactForm() {
     return (
       <div
         role="status"
-        className="rounded-2xl border border-line bg-white/[0.03] p-8 text-center"
+        className="rounded-2xl border border-line bg-black/[0.03] p-8 text-center"
       >
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent/15 text-accent">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">

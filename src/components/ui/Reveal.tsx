@@ -5,10 +5,10 @@ import { motion } from "motion/react";
 type Direction = "up" | "down" | "left" | "right" | "none";
 
 const offset: Record<Direction, { x?: number; y?: number }> = {
-  up: { y: 28 },
-  down: { y: -28 },
-  left: { x: 28 },
-  right: { x: -28 },
+  up: { y: 40 },
+  down: { y: -40 },
+  left: { x: 40 },
+  right: { x: -40 },
   none: {},
 };
 
@@ -32,10 +32,10 @@ export function Reveal({
   return (
     <MotionTag
       className={className}
-      initial={{ opacity: 0, ...offset[direction] }}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, margin: "0px 0px -12% 0px" }}
-      transition={{ duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] }}
+      initial={{ opacity: 0, scale: 0.95, filter: "blur(8px)", ...offset[direction] }}
+      whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)", x: 0, y: 0 }}
+      viewport={{ once: true, margin: "0px 0px -15% 0px" }}
+      transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
     >
       {children}
     </MotionTag>

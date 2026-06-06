@@ -40,9 +40,9 @@ export function LogoMark({ className }: { className?: string }) {
     >
       <defs>
         <linearGradient id="rohi-flame" x1="20" y1="6" x2="20" y2="34" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#ffb066" />
-          <stop offset="0.55" stopColor="#e8843c" />
-          <stop offset="1" stopColor="#b5561f" />
+          <stop stopColor="#10b981" />
+          <stop offset="0.55" stopColor="#0ea5e9" />
+          <stop offset="1" stopColor="#0284c7" />
         </linearGradient>
       </defs>
       <rect x="1" y="1" width="38" height="38" rx="11" className="fill-bg-elev" stroke="currentColor" strokeOpacity="0.16" />

@@ -5,7 +5,7 @@
 
 export const company = {
   name: "Rohi Energy",
-  tagline: "Powering progress, responsibly.",
+  tagline: "Powering progress, sustainably.",
   shortName: "Rohi",
   established: 2009,
 } as const;
